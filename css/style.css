@@ -89,6 +89,8 @@ img {
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-color);
+  --color1: var(--accent-color);
+  --color3: var(--accent-color);
 }
 .contacts {
   color: var(--secondary-text-color);
@@ -111,23 +113,9 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-/* .header-contacts .link::before {
-  display: block;
-  width: 16px;
-  height: 16px;
+.envelope,
+.smartphone {
   margin-right: 10px;
-  content: "";
-  background-image: url(../images/envelope.svg);
-  background-repeat: no-repeat; */
-
-/* background-position: bottom;
-  background-size: contain;
-} */
-.header-contacts .link[href="tel:+380961111111"]::before {
-  content: "";
-  width: 10px;
-  background-image: url(../images/smartphone.svg);
 }
 .header-contacts .link {
   display: flex;
@@ -223,10 +211,16 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
-.advantages .item {
+.advantages .icon-field {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--our-team-section-background);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
+
 /* What we are doing */
 .doing-section {
   padding-top: 94px;
@@ -317,35 +311,26 @@ img {
 .social-network {
   display: flex;
 }
-.social-network .link {
-  display: block;
+.social-network .icon {
+  width: 20px;
+  height: 20px;
 }
-.social-network .link {
-  display: block;
+.card-content .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  background-image: url(../images/instagram.svg);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
 }
 .social-network .item + .item {
   margin-left: 10px;
 }
-.social-network .link[aria-label="ссылка на Twitter"] {
-  background-image: url(../images/twitter.svg);
-}
-.social-network .link[aria-label="ссылка на Facebook"] {
-  background-image: url(../images/facebook.svg);
-}
-.social-network .link[aria-label="ссылка на LinkedIn"] {
-  background-image: url(../images/linkedin.svg);
-}
 
 .social-network .link:hover,
 .social-network .link:focus {
   background-color: var(--accent-color);
+  --color4: var(--white-color);
 }
 /* our clients */
 .clients {

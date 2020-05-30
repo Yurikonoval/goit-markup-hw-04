@@ -276,7 +276,7 @@ img {
   border-top-right-radius: inherit;
 }
 .our-team .card-content {
-  padding: 30px 32px 34px;
+  padding: 30px 32px;
 
   background-color: var(--white-color);
   border-bottom-right-radius: inherit;
@@ -342,11 +342,18 @@ img {
   justify-content: space-between;
 }
 .clients .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .clients .link:hover,
 .clients .link:focus {
-  color: var(--accent-color);
+  border-color: var(--accent-color);
+  --color4: var(--accent-color);
 }
 /* footer */
 .page-footer {
@@ -398,6 +405,28 @@ img {
 }
 .subscribe {
   margin-left: auto;
+}
+.join-us .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  --color4: var(--white-color);
+}
+.join-us .link:hover,
+.join-us .link:focus {
+  background-color: var(--accent-color);
+}
+.subscribe .icon {
+  margin-left: 10px;
+}
+.subscribe .button {
+  display: flex;
+  align-items: center;
+  padding: 10px 29px;
 }
 .copyright {
   margin-top: 0;
@@ -460,6 +489,11 @@ img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   overflow: hidden;
+}
+.portfolio .link:hover,
+.portfolio .link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .card-text {
   padding: 20px 24px;
